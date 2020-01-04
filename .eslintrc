@@ -54,14 +54,7 @@
     "@typescript-eslint/no-empty-function": "error",
     "@typescript-eslint/no-extra-parens": [
       "error",
-      "all",
-      {
-        "conditionalAssign": false,
-        "enforceForArrowConditionals": false,
-        "ignoreJSX": "all",
-        "nestedBinaryExpressions": false,
-        "returnAssign": false
-      }
+      "functions"
     ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
@@ -122,7 +115,10 @@
     "no-unused-labels": "error",
     "quotes": [
       "error",
-      "single"
+      "single",
+      {
+        "avoidEscape": true
+      }
     ],
     "radix": "error",
     "semi": "off",

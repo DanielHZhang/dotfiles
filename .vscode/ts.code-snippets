@@ -9,7 +9,7 @@ placeholders. Placeholders with the same ids are connected.
 */
 {
   "Print to console": {
-    "scope": "javascript,typescript,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "clog",
     "body": [
       "console.log($0);",
@@ -17,12 +17,18 @@ placeholders. Placeholders with the same ids are connected.
     "description": "Logs output to console"
   },
   "Print here to console": {
-    "scope": "javascript,typescript,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "chere",
     "body": [
       "console.log('%cGOES HERE', 'color: red; font-size: 16px;'$0);"
     ],
     "description": "Logs output 'Goes here' to console"
+  },
+  "Eslint disable": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "eslintdisable",
+    "body": "/* eslint-disable $0 */",
+    "description": "Disable eslint rule for entire file"
   },
   "Import react": {
     "scope": "javascriptreact,typescriptreact",

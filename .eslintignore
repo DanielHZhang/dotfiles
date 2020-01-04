@@ -1,6 +1,6 @@
 /build/**
 /coverage/**
 /docs/**
-/prisma-client/**
+/generated/**
 /node_modules/**
 /temp/**
