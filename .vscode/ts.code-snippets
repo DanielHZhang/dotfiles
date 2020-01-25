@@ -24,6 +24,16 @@ placeholders. Placeholders with the same ids are connected.
     ],
     "description": "Logs output 'Goes here' to console"
   },
+  "Nexus GraphQL resolver": {
+    "scope": "javascript,typescript",
+    "prefix": "resolver",
+    "body": [
+      "resolve: async (parent, args, ctx, info) => {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a nexus GraphQL resolver function skeleton"
+  },
   "Eslint disable": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "eslintdisable",
