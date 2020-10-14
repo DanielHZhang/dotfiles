@@ -1,9 +1,13 @@
 /.build/**
+/.local/**
 /.next/**
-/.temp/**
 /build/**
 /coverage/**
+/dist/**
 /docs/**
-/prisma-client/**
+/generated/**
+/jsdoc/**
+/lib/**
 /node_modules/**
 /temp/**
+/tmp/**
