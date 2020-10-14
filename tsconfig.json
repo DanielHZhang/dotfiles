@@ -7,7 +7,9 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": true,
     "jsx": "react",
     "lib": [
       "dom",
@@ -18,30 +20,29 @@
       "es2019",
       "esnext"
     ],
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
+    "noEmit": false,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": false,
     "noUnusedLocals": true,
-    "outDir": "build",
+    "outDir": ".build",
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "sourceMap": true,
+    "strict": true,
     "strictBindCallApply": true,
     "strictNullChecks": true,
     "target": "es6"
   },
   "exclude": [
-    ".awcache",
-    ".idea",
     ".vscode",
-    "bin",
-    "**/build/*",
-    "**/node_modules/*"
+    "node_modules/**/*"
   ],
   "include": [
-    "client/**/*",
-    "server/**/*",
-    "shared/**/*"
+    "scripts/**/*",
+    "src/**/*",
+    "test/**/*"
   ]
 }
