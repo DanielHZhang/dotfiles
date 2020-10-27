@@ -8,14 +8,15 @@ HISTSIZE=10000
 SAVEHIST=5000
 setopt INC_APPEND_HISTORY_TIME
 
-# Syntax highlighting env variables
+# Syntax highlighting
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=50
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=true
 
-# Add local packages to path
+# Add aliases
+alias youtube-dl='python3 /usr/local/bin/youtube-dl'
+
+# Add local packages to path and export env variables
 export TZ=America/Toronto
 export PATH=$PATH:~/.local/bin
-
-# Add aliases
-# alias youtube-dl='python3 /usr/local/bin/youtube-dl'
+export GPG_TTY=$(tty)
